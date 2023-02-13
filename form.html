@@ -1,0 +1,77 @@
+<html>
+<head><title>form</title><style>label {
+  
+  color: #7d7d7d;
+}
+
+.floatBlock {
+  margin: 0 1.81em 0 0;
+}
+
+.labelish {
+	color:#7d7d7d;
+	margin: 0;
+}
+
+paymentOptions {
+	border: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	break-before: always;
+	margin: 0 0 3em 0;
+}
+
+#purchaseOrder {
+	margin: 0 0 2em 0;
+}</style></head>
+<body>
+<form action="/action_page.php" method="get">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="cars">Qualification:</label>
+  <select name="Qualification" id="qualification">
+    <option value="ug">UG</option>
+    <option value="PG">PG</option>
+    <option value="Diploma">Diploma</option>
+    <option value="School">School</option>
+  </select><br><br>
+  <label for="fname">Citizenship:</label>
+  
+     <div id="paymentContainer" name="paymentContainer" class="paymentOptions">
+ <div id="payCC" class="floatBlock">
+                    <label for="paymentCC"> <input id="paymentCC" name="paymentType" type="radio" value="CREDIT_CARD" />  Indian </label>
+                </div>
+
+                <div id="payInvoice" class="floatBlock">
+                    <label for="paymentInv"> <input id="paymentInv" name="paymentType" type="radio" value="INVOICE" /> NRI</label>
+                </div>
+ </div>
+  <legend>Language:</legend>
+   <div>
+      <input type="checkbox" id="scales" name="scales" >
+      <label for="scales">Tamil</label>
+    </div>
+
+    <div>
+      <input type="checkbox" id="horns" name="horns">
+      <label for="horns">English</label>
+    </div>
+ <div>
+      <input type="checkbox" id="horns" name="horns">
+      <label for="horns">Hindi</label>
+    </div>
+   
+   <label for="about">About Me<label>
+<textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+<br><br><label for="fname">User Name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">passWord:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+   <br><br><br><input type="submit" value="Submit">
+  
+</form> 
+</body>
+</html>
